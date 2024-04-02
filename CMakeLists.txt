@@ -6,6 +6,7 @@ project(planning
     LANGUAGES CXX
 )
 set(CMAKE_CXX_STANDARD 17)
+enable_testing()
 
 # 设置变量 子目录中也能使用父目录中的变量
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -24,5 +25,6 @@ endif()
 
 # 添加子目录
 add_subdirectory(src)
+add_subdirectory(test/map_test)
 
 
